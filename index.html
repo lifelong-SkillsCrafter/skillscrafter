@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>Bring Your Dreams to Life: Continual Text-to-Video Customization</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Bring Your Dreams to Life: Continual Text-to-Video Customization</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="Anonymous" target="_blank">Anonymous</a><sup>*</sup>,</span>
+                  </div>
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code (Referring our supplementary)</span>
+                  </a>
+                </span>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Single image display with size control -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div class="single-image-container">
+        <div class="image-with-caption">
+          <!-- 修改后的图片容器 -->
+          <div class="image-wrapper" style="max-width: 800px; margin: 0 auto;">
+            <img 
+              src="static/images/F2.jpg" 
+              alt="Customization performance comparison"
+              style="width: 100%; height: auto; border: 1px solid #eee; border-radius: 4px;"
+            >
+          </div>
+          <h2 class="subtitle has-text-centered mt-4" style="max-width: 800px; margin: 0 auto;">
+            <strong>The proposed Continual Text-to-Video Customization task:</strong>
+            CCVD in continually learning new personalized concepts, including subjects and motions, for customized text-to-video generation under the CTVC setting. Compared with L2DM, our model achieves better performance to address the CTVC problem.
+          </h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  /* 响应式调整 */
+  @media screen and (max-width: 768px) {
+    .image-wrapper {
+      max-width: 50% !important;
+    }
+    .subtitle {
+      padding: 0 15px;
+    }
+  }
+</style>
+
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Customized text-to-video generation (CTVG) has recently witnessed significant progress in generating tailored videos from user-specific text. However, existing CTVG methods unrealistically assume that personalized concepts remain static and do not expand incrementally over time. Additionally, they struggle with catastrophic forgetting and concept neglect when continuously learning new concepts, including subjects and motions. To resolve the above challenges, we develop a novel Continual Customized Video Diffusion (CCVD) model, which can continuously learn new concepts to generate videos across various text-to-video generation tasks by tackling catastrophic forgetting and concept neglect. Specifically, to address catastrophic forgetting, we introduce a concept-specific attribute retention module and a task-aware concept aggregation strategy. They can capture the unique characteristics and identities of old concepts during training, while combining all subject and motion adapters of old concepts based on their relevance during testing. Furthermore, to tackle concept neglect, we develop a controllable conditional synthesis to enhance regional features and align video contexts with user conditions, by incorporating region attention and attention-guided noise estimation. Experimental comparisons demonstrate our CCVD outperforms existing CTVG models.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+<!-- Single image display with size control -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div class="single-image-container">
+        <div class="image-with-caption">
+          <!-- 修改后的图片容器 -->
+          <div class="image-wrapper" style="max-width: 800px; margin: 0 auto;">
+            <img 
+              src="static/images/F1.jpg" 
+              alt="Customization performance comparison"
+              style="width: 100%; height: auto; border: 1px solid #eee; border-radius: 4px;"
+            >
+          </div>
+          <h2 class="subtitle has-text-centered mt-4" style="max-width: 800px; margin: 0 auto;">
+            Architectural overview of our CCVD model. It includes (a) a <strong>concept-specific attribute retention module</strong>, (b) a <strong>task-aware concept aggregation strategy</strong> to overcome catastrophic forgetting of previously learned concepts, and (c) a <strong>controllable conditional synthesis module</strong> with layer-specific region attention and attention-guided noise estimation to address the issue of concept neglect.
+          </h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Single image display with size control -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div class="single-image-container">
+        <div class="image-with-caption">
+          <!-- 修改后的图片容器 -->
+          <div class="image-wrapper" style="max-width: 800px; margin: 0 auto;">
+            <img 
+              src="static/images/F3.jpg" 
+              alt="Customization performance comparison"
+              style="width: 100%; height: auto; border: 1px solid #eee; border-radius: 4px;"
+            >
+          </div>
+          <h2 class="subtitle has-text-centered mt-4" style="max-width: 800px; margin: 0 auto;">
+            <strong>Visualization of 35 consecutive text-to-video customization tasks</strong> in the CVC dataset, including 25 personalized subjects and 10 <span style="color: #DAA520;">motion (yellow)</span> patterns. Among the 25 personalized subjects, 9 are <span style="color: blue;">pets (blue)</span>, 5 are <span style="color: purple;">styles (purple)</span>, and the remaining 11 are <span style="color: green;">objects (green)</span>.
+          </h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Three Independent Videos Display -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title is-2 has-text-centered has-text-weight-bold mb-5">
+        Qualitative Comparison Results
+      </h1>
+      
+      <!-- 视频1 -->
+      <div class="video-container has-text-centered mb-6">
+        <h2 class="subtitle is-4 has-text-weight-semibold mb-3">Multi-Concept Customization Result 1</h2>
+        <video 
+          autoplay 
+          controls 
+          muted 
+          loop
+          class="centered-video"
+          poster="static/videos/poster1.jpg">
+          <source src="static/videos/V1.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      
+      <!-- 视频2 -->
+      <div class="video-container has-text-centered mb-6">
+        <h2 class="subtitle is-4 has-text-weight-semibold mb-3">Multi-Concept Customization Result 2</h2>
+        <video 
+          autoplay 
+          controls 
+          muted 
+          loop
+          class="centered-video"
+          poster="static/videos/poster2.jpg">
+          <source src="static/videos/V3.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <!-- 视频3 -->
+      <div class="video-container has-text-centered mb-6">
+        <h2 class="subtitle is-4 has-text-weight-semibold mb-3">Multi-Concept Customization Result 3</h2>
+        <video 
+          autoplay 
+          controls 
+          muted 
+          loop
+          class="centered-video"
+          poster="static/videos/poster2.jpg">
+          <source src="static/videos/V5.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      
+        <!-- 视频4 -->
+      <div class="video-container has-text-centered mb-6">
+        <h2 class="subtitle is-4 has-text-weight-semibold mb-3">Multi-Concept Customization Result 4</h2>
+        <video 
+          autoplay 
+          controls 
+          muted 
+          loop
+          class="centered-video"
+          poster="static/videos/poster2.jpg">
+          <source src="static/videos/V2.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <!-- 视频5 -->
+      <div class="video-container has-text-centered mb-6">
+        <h2 class="subtitle is-4 has-text-weight-semibold mb-3">Multi-Concept Customization Result 5</h2>
+        <video 
+          autoplay 
+          controls 
+          muted 
+          loop
+          class="centered-video"
+          poster="static/videos/poster2.jpg">
+          <source src="static/videos/V4.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      
+      <!-- 视频6 -->
+      <div class="video-container has-text-centered mb-6">
+        <h2 class="subtitle is-4 has-text-weight-semibold mb-3">Multi-Concept Customization Style Transfer Result 1</h2>
+        <video 
+          autoplay 
+          controls 
+          muted 
+          loop
+          class="centered-video"
+          poster="static/videos/poster2.jpg">
+          <source src="static/videos/V7.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <!-- 视频7 -->
+      <div class="video-container has-text-centered mb-6">
+        <h2 class="subtitle is-4 has-text-weight-semibold mb-3">Multi-Concept Customization Style Transfer Result 2</h2>
+        <video 
+          autoplay 
+          controls 
+          muted 
+          loop
+          class="centered-video"
+          poster="static/videos/poster2.jpg">
+          <source src="static/videos/V6.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <!-- 视频8 -->
+      <div class="video-container has-text-centered mb-6">
+        <h2 class="subtitle is-4 has-text-weight-semibold mb-3">Multi-Concept Customization Style Transfer Result 3</h2>
+        <video 
+          autoplay 
+          controls 
+          muted 
+          loop
+          class="centered-video"
+          poster="static/videos/poster2.jpg">
+          <source src="static/videos/V8.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      
+      <!-- 视频9 -->
+      <div class="video-container has-text-centered">
+        <h2 class="subtitle is-4 has-text-weight-semibold mb-3">Single-Concept Customization Result 1</h2>
+        <video 
+          autoplay 
+          controls 
+          muted 
+          loop
+          class="centered-video"
+          poster="static/videos/poster3.jpg">
+          <source src="static/videos/V9.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      
+      <!-- 视频10 -->
+      <div class="video-container has-text-centered">
+        <h2 class="subtitle is-4 has-text-weight-semibold mb-3">Single-Concept Customization Result 2</h2>
+        <video 
+          autoplay 
+          controls 
+          muted 
+          loop
+          class="centered-video"
+          poster="static/videos/poster3.jpg">
+          <source src="static/videos/V10.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <!-- 视频11 -->
+      <div class="video-container has-text-centered">
+        <h2 class="subtitle is-4 has-text-weight-semibold mb-3">Single-Concept Customization Result 3</h2>
+        <video 
+          autoplay 
+          controls 
+          muted 
+          loop
+          class="centered-video"
+          poster="static/videos/poster3.jpg">
+          <source src="static/videos/V11.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <!-- 视频12 -->
+      <div class="video-container has-text-centered">
+        <h2 class="subtitle is-4 has-text-weight-semibold mb-3">Customization Video Editing Result</h2>
+        <video 
+          autoplay 
+          controls 
+          muted 
+          loop
+          class="centered-video"
+          poster="static/videos/poster3.jpg">
+          <source src="static/videos/V12.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  /* 视频容器样式 */
+  .video-container {
+    max-width: 800px;
+    margin: 0 auto 3rem auto;
+    background: #f5f5f5;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+  
+  /* 视频元素样式 */
+  .centered-video {
+    width: 100%;
+    max-height: 500px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 4px;
+  }
+  
+  /* 响应式调整 */
+  @media screen and (max-width: 768px) {
+    .video-container {
+      padding: 10px;
+    }
+    .centered-video {
+      max-height: 300px;
+    }
+  }
+</style>
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
