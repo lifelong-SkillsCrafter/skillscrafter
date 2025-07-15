@@ -24,7 +24,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Bring Your Dreams to Life: Continual Text-to-Video Customization</title>
+  <title>Lifelong Language-Conditioned Robotic Manipulation Learning</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -52,7 +52,7 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Bring Your Dreams to Life: Continual Text-to-Video Customization</h1>
+            <h1 class="title is-1 publication-title">Lifelong Language-Conditioned Robotic Manipulation Learning</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
@@ -93,8 +93,8 @@
             >
           </div>
           <h2 class="subtitle has-text-centered mt-4" style="max-width: 800px; margin: 0 auto;">
-            <strong>The proposed Continual Text-to-Video Customization task:</strong>
-            CCVD in continually learning new personalized concepts, including subjects and motions, for customized text-to-video generation under the CTVC setting. Compared with L2DM, our model achieves better performance to address the CTVC problem.
+            <strong>The proposed Lifelong Robotic Manipulation task:</strong>
+            (a) SkillsCrafter is able to evolve and learn new skills based on learned skills. It maintains a skill knowledge base that stores learned knowledge to allow for efficient learning of new skills using shared knowledge of old skills, and for performing any unknown skill in the open world using previously learned knowledge. (b) Skills catastrophic forgetting under lifelong learning setting. (c) Our SkillsCrafter has a good anti-forgetting performance.
           </h2>
         </div>
       </div>
@@ -123,7 +123,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Customized text-to-video generation (CTVG) has recently witnessed significant progress in generating tailored videos from user-specific text. However, existing CTVG methods unrealistically assume that personalized concepts remain static and do not expand incrementally over time. Additionally, they struggle with catastrophic forgetting and concept neglect when continuously learning new concepts, including subjects and motions. To resolve the above challenges, we develop a novel Continual Customized Video Diffusion (CCVD) model, which can continuously learn new concepts to generate videos across various text-to-video generation tasks by tackling catastrophic forgetting and concept neglect. Specifically, to address catastrophic forgetting, we introduce a concept-specific attribute retention module and a task-aware concept aggregation strategy. They can capture the unique characteristics and identities of old concepts during training, while combining all subject and motion adapters of old concepts based on their relevance during testing. Furthermore, to tackle concept neglect, we develop a controllable conditional synthesis to enhance regional features and align video contexts with user conditions, by incorporating region attention and attention-guided noise estimation. Experimental comparisons demonstrate our CCVD outperforms existing CTVG models.
+            Traditional language-conditioned manipulation agent adaptation to new skills leads to catastrophic forgetting of old skills, limiting more practical dynamic scene deployment. In this paper, we propose SkillsCrafter, a novel robotic manipulation model designed to continually learn multiple manipulation skills while reducing catastrophic forgetting of old skills. Specifically, to achieve lifelong learning of new skills, we propose a Manipulation Skills Adaptation to achieve retaining the old skills knowledge while inheriting the shared knowledge between new and old skills to facilitate learning of new skills. Meanwhile, we perform the singular value decomposition on the diverse manipulation skills instructions to obtain a common skill semantic subspace projection matrices to record skills essential semantic space. To achieve forget-less and generalization manipulation, we propose a Skills Specialization Aggregation to compute inter-skills similarity in skill semantic subspaces to achieve aggregation of the previously learned skill knowledge for any new or unknown skill manipulation. Extensive simulator experiments and real-world deployments demonstrate the effectiveness and superiority of the proposed SkillsCrafter. 
           </p>
         </div>
       </div>
@@ -147,7 +147,7 @@
             >
           </div>
           <h2 class="subtitle has-text-centered mt-4" style="max-width: 800px; margin: 0 auto;">
-            Architectural overview of our CCVD model. It includes (a) a <strong>concept-specific attribute retention module</strong>, (b) a <strong>task-aware concept aggregation strategy</strong> to overcome catastrophic forgetting of previously learned concepts, and (c) a <strong>controllable conditional synthesis module</strong> with layer-specific region attention and attention-guided noise estimation to address the issue of concept neglect.
+           Illustration of the proposed SkillsCrafter pipeline. It includes (a) a Manipulation Skills Adaptation to achieve retaining the old skills knowledge while inheriting the shared knowledge between new and old skills to facilitate learning of new skills; (b) a Skills Specialization Aggregation to compute inter-skills similarity in skill-specific subspaces to achieve adaptive aggregation of skills knowledge; (c) a Skills Specified Inference to loads aggregated knowledge to achieve any skill manipulation inference.
           </h2>
         </div>
       </div>
