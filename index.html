@@ -85,14 +85,14 @@
       <div class="single-image-container">
         <div class="image-with-caption">
           <!-- 修改后的图片容器 -->
-          <div class="image-wrapper" style="max-width: 800px; margin: 0 auto;">
+          <div class="image-wrapper" style="max-width: 1200px; margin: 0 auto;">
             <img 
               src="static/images/F1.png" 
               alt="Customization performance comparison"
               style="width: 100%; height: auto; border: 1px solid #eee; border-radius: 4px;"
             >
           </div>
-          <h2 class="subtitle has-text-centered mt-4" style="max-width: 800px; margin: 0 auto;">
+          <h2 class="subtitle has-text-centered mt-4" style="max-width: 1200px; margin: 0 auto;">
             <strong>The proposed Lifelong Robotic Manipulation task:</strong>
             (a) SkillsCrafter is able to evolve and learn new skills based on learned skills. It maintains a skill knowledge base that stores learned knowledge to allow for efficient learning of new skills using shared knowledge of old skills, and for performing any unknown skill in the open world using previously learned knowledge. (b) Skills catastrophic forgetting under lifelong learning setting. (c) Our SkillsCrafter has a good anti-forgetting performance.
           </h2>
@@ -117,7 +117,7 @@
 
 <!-- Paper abstract -->
 <section class="section hero is-light">
-  <div class="container is-max-desktop">
+  <div class="container" style="max-width: 1000px; margin: 0 auto;">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
@@ -139,14 +139,14 @@
       <div class="single-image-container">
         <div class="image-with-caption">
           <!-- 修改后的图片容器 -->
-          <div class="image-wrapper" style="max-width: 800px; margin: 0 auto;">
+          <div class="image-wrapper" style="max-width: 1200px; margin: 0 auto;">
             <img 
               src="static/images/F2.png" 
               alt="Customization performance comparison"
               style="width: 100%; height: auto; border: 1px solid #eee; border-radius: 4px;"
             >
           </div>
-          <h2 class="subtitle has-text-centered mt-4" style="max-width: 800px; margin: 0 auto;">
+          <h2 class="subtitle has-text-centered mt-4" style="max-width: 1200px; margin: 0 auto;">
            Illustration of the proposed SkillsCrafter pipeline. It includes (a) a Manipulation Skills Adaptation to achieve retaining the old skills knowledge while inheriting the shared knowledge between new and old skills to facilitate learning of new skills; (b) a Skills Specialization Aggregation to compute inter-skills similarity in skill-specific subspaces to achieve adaptive aggregation of skills knowledge; (c) a Skills Specified Inference to loads aggregated knowledge to achieve any skill manipulation inference.
           </h2>
         </div>
@@ -162,15 +162,16 @@
       <div class="single-image-container">
         <div class="image-with-caption">
           <!-- 修改后的图片容器 -->
-          <div class="image-wrapper" style="max-width: 800px; margin: 0 auto;">
+          <div class="image-wrapper" style="max-width: 1200px; margin: 0 auto;">
             <img 
-              src="static/images/F3.jpg" 
+              src="static/images/F3.png" 
               alt="Customization performance comparison"
               style="width: 100%; height: auto; border: 1px solid #eee; border-radius: 4px;"
             >
           </div>
-          <h2 class="subtitle has-text-centered mt-4" style="max-width: 800px; margin: 0 auto;">
-            <strong>Visualization of 35 consecutive text-to-video customization tasks</strong> in the CVC dataset, including 25 personalized subjects and 10 <span style="color: #DAA520;">motion (yellow)</span> patterns. Among the 25 personalized subjects, 9 are <span style="color: blue;">pets (blue)</span>, 5 are <span style="color: purple;">styles (purple)</span>, and the remaining 11 are <span style="color: green;">objects (green)</span>.
+          <h2 class="subtitle has-text-centered mt-4" style="max-width: 1200px; margin: 0 auto;">
+            <strong></strong>Illustration of the experiment robotic skill tasks setting.</strong> We establish a total of 12 robotic simulator skills and 6 real-environment robotic skills for incremental learning. The first 16 skills serve as training and testing tasks for continual learning, while the last two skills are not trained and serve as open-world generalization testing.
+          
           </h2>
         </div>
       </div>
@@ -184,190 +185,570 @@
   <div class="hero-body">
     <div class="container">
       <h1 class="title is-2 has-text-centered has-text-weight-bold mb-5">
-        Qualitative Comparison Results
+        Real Robot Demonstrations(3x speed)
       </h1>
       
       <!-- 视频1 -->
-      <div class="video-container has-text-centered mb-6">
-        <h2 class="subtitle is-4 has-text-weight-semibold mb-3">Multi-Concept Customization Result 1</h2>
-        <video 
-          autoplay 
-          controls 
-          muted 
-          loop
-          class="centered-video"
-          poster="static/videos/poster1.jpg">
-          <source src="static/videos/V1.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-      </div>
+      <div class="columns is-centered mb-6">
+        <div class="column is-half has-text-centered">
+          <h2 class="subtitle is-4 has-text-weight-semibold mb-3">Multi-Concept Customization Result 1</h2>
+          <video 
+            autoplay 
+            controls 
+            muted 
+            loop 
+            class="centered-video"
+            poster="static/videos/poster1.jpg"
+            style="max-width: 100%; border: 1px solid #ddd; border-radius: 6px;">
+            <source src="static/videos/demo_enhance/娃娃1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
       
-      <!-- 视频2 -->
-      <div class="video-container has-text-centered mb-6">
-        <h2 class="subtitle is-4 has-text-weight-semibold mb-3">Multi-Concept Customization Result 2</h2>
-        <video 
-          autoplay 
-          controls 
-          muted 
-          loop
-          class="centered-video"
-          poster="static/videos/poster2.jpg">
-          <source src="static/videos/V3.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
+        <!-- 视频2 -->
+        <div class="column is-half has-text-centered">
+          <h2 class="subtitle is-4 has-text-weight-semibold mb-3">Multi-Concept Customization Result 2</h2>
+          <video 
+            autoplay 
+            controls 
+            muted 
+            loop 
+            class="centered-video"
+            poster="static/videos/poster2.jpg"
+            style="max-width: 100%; border: 1px solid #ddd; border-radius: 6px;">
+            <source src="static/videos/demo_enhance/娃娃2.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
       </div>
 
+      
       <!-- 视频3 -->
-      <div class="video-container has-text-centered mb-6">
-        <h2 class="subtitle is-4 has-text-weight-semibold mb-3">Multi-Concept Customization Result 3</h2>
-        <video 
-          autoplay 
-          controls 
-          muted 
-          loop
-          class="centered-video"
-          poster="static/videos/poster2.jpg">
-          <source src="static/videos/V5.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-      </div>
+      <div class="columns is-centered mb-6">
+        <div class="column is-half has-text-centered">
+          <h2 class="subtitle is-4 has-text-weight-semibold mb-3">Multi-Concept Customization Result 1</h2>
+          <video 
+            autoplay 
+            controls 
+            muted 
+            loop 
+            class="centered-video"
+            poster="static/videos/poster1.jpg"
+            style="max-width: 100%; border: 1px solid #ddd; border-radius: 6px;">
+            <source src="static/videos/demo_enhance/按钮1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
       
         <!-- 视频4 -->
-      <div class="video-container has-text-centered mb-6">
-        <h2 class="subtitle is-4 has-text-weight-semibold mb-3">Multi-Concept Customization Result 4</h2>
-        <video 
-          autoplay 
-          controls 
-          muted 
-          loop
-          class="centered-video"
-          poster="static/videos/poster2.jpg">
-          <source src="static/videos/V2.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
+        <div class="column is-half has-text-centered">
+          <h2 class="subtitle is-4 has-text-weight-semibold mb-3">Multi-Concept Customization Result 2</h2>
+          <video 
+            autoplay 
+            controls 
+            muted 
+            loop 
+            class="centered-video"
+            poster="static/videos/poster2.jpg"
+            style="max-width: 100%; border: 1px solid #ddd; border-radius: 6px;">
+            <source src="static/videos/demo_enhance/按钮2.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
       </div>
 
       <!-- 视频5 -->
-      <div class="video-container has-text-centered mb-6">
-        <h2 class="subtitle is-4 has-text-weight-semibold mb-3">Multi-Concept Customization Result 5</h2>
-        <video 
-          autoplay 
-          controls 
-          muted 
-          loop
-          class="centered-video"
-          poster="static/videos/poster2.jpg">
-          <source src="static/videos/V4.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-      </div>
-
+      <div class="columns is-centered mb-6">
+        <div class="column is-half has-text-centered">
+          <h2 class="subtitle is-4 has-text-weight-semibold mb-3">Multi-Concept Customization Result 1</h2>
+          <video 
+            autoplay 
+            controls 
+            muted 
+            loop 
+            class="centered-video"
+            poster="static/videos/poster1.jpg"
+            style="max-width: 100%; border: 1px solid #ddd; border-radius: 6px;">
+            <source src="static/videos/demo_enhance/抓瓶子.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
       
-      <!-- 视频6 -->
-      <div class="video-container has-text-centered mb-6">
-        <h2 class="subtitle is-4 has-text-weight-semibold mb-3">Multi-Concept Customization Style Transfer Result 1</h2>
-        <video 
-          autoplay 
-          controls 
-          muted 
-          loop
-          class="centered-video"
-          poster="static/videos/poster2.jpg">
-          <source src="static/videos/V7.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
+        <!-- 视频6 -->
+        <div class="column is-half has-text-centered">
+          <h2 class="subtitle is-4 has-text-weight-semibold mb-3">Multi-Concept Customization Result 2</h2>
+          <video 
+            autoplay 
+            controls 
+            muted 
+            loop 
+            class="centered-video"
+            poster="static/videos/poster2.jpg"
+            style="max-width: 100%; border: 1px solid #ddd; border-radius: 6px;">
+            <source src="static/videos/demo_enhance/抓瓶子2.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
       </div>
-
+      
       <!-- 视频7 -->
-      <div class="video-container has-text-centered mb-6">
-        <h2 class="subtitle is-4 has-text-weight-semibold mb-3">Multi-Concept Customization Style Transfer Result 2</h2>
-        <video 
-          autoplay 
-          controls 
-          muted 
-          loop
-          class="centered-video"
-          poster="static/videos/poster2.jpg">
-          <source src="static/videos/V6.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-      </div>
-
-      <!-- 视频8 -->
-      <div class="video-container has-text-centered mb-6">
-        <h2 class="subtitle is-4 has-text-weight-semibold mb-3">Multi-Concept Customization Style Transfer Result 3</h2>
-        <video 
-          autoplay 
-          controls 
-          muted 
-          loop
-          class="centered-video"
-          poster="static/videos/poster2.jpg">
-          <source src="static/videos/V8.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
+      <div class="columns is-centered mb-6">
+        <div class="column is-half has-text-centered">
+          <h2 class="subtitle is-4 has-text-weight-semibold mb-3">Multi-Concept Customization Result 1</h2>
+          <video 
+            autoplay 
+            controls 
+            muted 
+            loop 
+            class="centered-video"
+            poster="static/videos/poster1.jpg"
+            style="max-width: 100%; border: 1px solid #ddd; border-radius: 6px;">
+            <source src="static/videos/demo_enhance/小车.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      
+        <!-- 视频8 -->
+        <div class="column is-half has-text-centered">
+          <h2 class="subtitle is-4 has-text-weight-semibold mb-3">Multi-Concept Customization Result 2</h2>
+          <video 
+            autoplay 
+            controls 
+            muted 
+            loop 
+            class="centered-video"
+            poster="static/videos/poster2.jpg"
+            style="max-width: 100%; border: 1px solid #ddd; border-radius: 6px;">
+            <source src="static/videos/demo_enhance/小鸡.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
       </div>
       
       <!-- 视频9 -->
-      <div class="video-container has-text-centered">
-        <h2 class="subtitle is-4 has-text-weight-semibold mb-3">Single-Concept Customization Result 1</h2>
-        <video 
-          autoplay 
-          controls 
-          muted 
-          loop
-          class="centered-video"
-          poster="static/videos/poster3.jpg">
-          <source src="static/videos/V9.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-      </div>
+      <div class="columns is-centered mb-6">
+        <div class="column is-half has-text-centered">
+          <h2 class="subtitle is-4 has-text-weight-semibold mb-3">Multi-Concept Customization Result 1</h2>
+          <video 
+            autoplay 
+            controls 
+            muted 
+            loop 
+            class="centered-video"
+            poster="static/videos/poster1.jpg"
+            style="max-width: 100%; border: 1px solid #ddd; border-radius: 6px;">
+            <source src="static/videos/demo_enhance/圆柱.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
       
-      <!-- 视频10 -->
-      <div class="video-container has-text-centered">
-        <h2 class="subtitle is-4 has-text-weight-semibold mb-3">Single-Concept Customization Result 2</h2>
-        <video 
-          autoplay 
-          controls 
-          muted 
-          loop
-          class="centered-video"
-          poster="static/videos/poster3.jpg">
-          <source src="static/videos/V10.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
+        <!-- 视频10 -->
+        <div class="column is-half has-text-centered">
+          <h2 class="subtitle is-4 has-text-weight-semibold mb-3">Multi-Concept Customization Result 2</h2>
+          <video 
+            autoplay 
+            controls 
+            muted 
+            loop 
+            class="centered-video"
+            poster="static/videos/poster2.jpg"
+            style="max-width: 100%; border: 1px solid #ddd; border-radius: 6px;">
+            <source src="static/videos/demo_enhance/圆柱2.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
       </div>
 
       <!-- 视频11 -->
-      <div class="video-container has-text-centered">
-        <h2 class="subtitle is-4 has-text-weight-semibold mb-3">Single-Concept Customization Result 3</h2>
-        <video 
-          autoplay 
-          controls 
-          muted 
-          loop
-          class="centered-video"
-          poster="static/videos/poster3.jpg">
-          <source src="static/videos/V11.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
+      <div class="columns is-centered mb-6">
+        <div class="column is-half has-text-centered">
+          <h2 class="subtitle is-4 has-text-weight-semibold mb-3">Multi-Concept Customization Result 1</h2>
+          <video 
+            autoplay 
+            controls 
+            muted 
+            loop 
+            class="centered-video"
+            poster="static/videos/poster1.jpg"
+            style="max-width: 100%; border: 1px solid #ddd; border-radius: 6px;">
+            <source src="static/videos/demo_enhance/关上抽屉.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      
+        <!-- 视频12 -->
+        <div class="column is-half has-text-centered">
+          <h2 class="subtitle is-4 has-text-weight-semibold mb-3">Multi-Concept Customization Result 2</h2>
+          <video 
+            autoplay 
+            controls 
+            muted 
+            loop 
+            class="centered-video"
+            poster="static/videos/poster2.jpg"
+            style="max-width: 100%; border: 1px solid #ddd; border-radius: 6px;">
+            <source src="static/videos/demo_enhance/开上抽屉.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
       </div>
 
-      <!-- 视频12 -->
-      <div class="video-container has-text-centered">
-        <h2 class="subtitle is-4 has-text-weight-semibold mb-3">Customization Video Editing Result</h2>
-        <video 
-          autoplay 
-          controls 
-          muted 
-          loop
-          class="centered-video"
-          poster="static/videos/poster3.jpg">
-          <source src="static/videos/V12.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-      </div>
     </div>
+    <div class="container">
+      <h1 class="title is-2 has-text-centered has-text-weight-bold mb-5">
+        Simulation Environment Demonstration
+      </h1>
+
+      <div class="columns is-centered mb-6">
+        <!-- GIF 1 -->
+        <div class="column is-one-third has-text-centered">
+          <h2 class="subtitle is-4 has-text-weight-semibold mb-3">Multi-Concept Customization Result 1</h2>
+          <img 
+            src="static/videos/demo_gif/open_drawer_episode42.gif" 
+            alt="GIF 1"
+            style="max-width: 100%; border: 1px solid #ddd; border-radius: 6px;">
+        </div>
+      
+        <!-- GIF 2 -->
+        <div class="column is-one-third has-text-centered">
+          <h2 class="subtitle is-4 has-text-weight-semibold mb-3">Multi-Concept Customization Result 2</h2>
+          <img 
+            src="static/videos/demo_gif/open_drawer_episode66.gif" 
+            alt="GIF 2"
+            style="max-width: 100%; border: 1px solid #ddd; border-radius: 6px;">
+        </div>
+      
+        <!-- GIF 3 -->
+        <div class="column is-one-third has-text-centered">
+          <h2 class="subtitle is-4 has-text-weight-semibold mb-3">Multi-Concept Customization Result 3</h2>
+          <img 
+             src="static/videos/demo_gif/open_drawer_episode88.gif" 
+            alt="GIF 3"
+            style="max-width: 100%; border: 1px solid #ddd; border-radius: 6px;">
+        </div>
+      </div>
+
+      <div class="columns is-centered mb-6">
+        <!-- GIF 1 -->
+        <div class="column is-one-third has-text-centered">
+          <h2 class="subtitle is-4 has-text-weight-semibold mb-3">Multi-Concept Customization Result 1</h2>
+          <img 
+            src="static/videos/demo_gif/slide_block_to_target_episode6.gif" 
+            alt="GIF 1"
+            style="max-width: 100%; border: 1px solid #ddd; border-radius: 6px;">
+        </div>
+      
+        <!-- GIF 2 -->
+        <div class="column is-one-third has-text-centered">
+          <h2 class="subtitle is-4 has-text-weight-semibold mb-3">Multi-Concept Customization Result 2</h2>
+          <img 
+            src="static/videos/demo_gif/slide_block_to_target_episode66.gif" 
+            alt="GIF 2"
+            style="max-width: 100%; border: 1px solid #ddd; border-radius: 6px;">
+        </div>
+      
+        <!-- GIF 3 -->
+        <div class="column is-one-third has-text-centered">
+          <h2 class="subtitle is-4 has-text-weight-semibold mb-3">Multi-Concept Customization Result 3</h2>
+          <img 
+             src="static/videos/demo_gif/slide_block_to_target_episode88.gif" 
+            alt="GIF 3"
+            style="max-width: 100%; border: 1px solid #ddd; border-radius: 6px;">
+        </div>
+      </div>
+
+      <div class="columns is-centered mb-6">
+        <!-- GIF 1 -->
+        <div class="column is-one-third has-text-centered">
+          <h2 class="subtitle is-4 has-text-weight-semibold mb-3">Multi-Concept Customization Result 1</h2>
+          <img 
+            src="static/videos/demo_gif/put_money_in_safe_episode6.gif" 
+            alt="GIF 1"
+            style="max-width: 100%; border: 1px solid #ddd; border-radius: 6px;">
+        </div>
+      
+        <!-- GIF 2 -->
+        <div class="column is-one-third has-text-centered">
+          <h2 class="subtitle is-4 has-text-weight-semibold mb-3">Multi-Concept Customization Result 2</h2>
+          <img 
+            src="static/videos/demo_gif/put_money_in_safe_episode66.gif" 
+            alt="GIF 2"
+            style="max-width: 100%; border: 1px solid #ddd; border-radius: 6px;">
+        </div>
+      
+        <!-- GIF 3 -->
+        <div class="column is-one-third has-text-centered">
+          <h2 class="subtitle is-4 has-text-weight-semibold mb-3">Multi-Concept Customization Result 3</h2>
+          <img 
+             src="static/videos/demo_gif/put_money_in_safe_episode88.gif" 
+            alt="GIF 3"
+            style="max-width: 100%; border: 1px solid #ddd; border-radius: 6px;">
+        </div>
+      </div>
+      
+      <div class="columns is-centered mb-6">
+        <!-- GIF 1 -->
+        <div class="column is-one-third has-text-centered">
+          <h2 class="subtitle is-4 has-text-weight-semibold mb-3">Multi-Concept Customization Result 1</h2>
+          <img 
+            src="static/videos/demo_gif/sweep_to_dustpan_episode6.gif" 
+            alt="GIF 1"
+            style="max-width: 100%; border: 1px solid #ddd; border-radius: 6px;">
+        </div>
+      
+        <!-- GIF 2 -->
+        <div class="column is-one-third has-text-centered">
+          <h2 class="subtitle is-4 has-text-weight-semibold mb-3">Multi-Concept Customization Result 2</h2>
+          <img 
+            src="static/videos/demo_gif/sweep_to_dustpan_episode88.gif" 
+            alt="GIF 2"
+            style="max-width: 100%; border: 1px solid #ddd; border-radius: 6px;">
+        </div>
+      
+        <!-- GIF 3 -->
+        <div class="column is-one-third has-text-centered">
+          <h2 class="subtitle is-4 has-text-weight-semibold mb-3">Multi-Concept Customization Result 3</h2>
+          <img 
+             src="static/videos/demo_gif/sweep_to_dustpan_episode66.gif" 
+            alt="GIF 3"
+            style="max-width: 100%; border: 1px solid #ddd; border-radius: 6px;">
+        </div>
+      </div>
+      
+      <div class="columns is-centered mb-6">
+        <!-- GIF 1 -->
+        <div class="column is-one-third has-text-centered">
+          <h2 class="subtitle is-4 has-text-weight-semibold mb-3">Multi-Concept Customization Result 1</h2>
+          <img 
+            src="static/videos/demo_gif/push_buttons_episode6.gif" 
+            alt="GIF 1"
+            style="max-width: 100%; border: 1px solid #ddd; border-radius: 6px;">
+        </div>
+      
+        <!-- GIF 2 -->
+        <div class="column is-one-third has-text-centered">
+          <h2 class="subtitle is-4 has-text-weight-semibold mb-3">Multi-Concept Customization Result 2</h2>
+          <img 
+            src="static/videos/demo_gif/push_buttons_episode66.gif" 
+            alt="GIF 2"
+            style="max-width: 100%; border: 1px solid #ddd; border-radius: 6px;">
+        </div>
+      
+        <!-- GIF 3 -->
+        <div class="column is-one-third has-text-centered">
+          <h2 class="subtitle is-4 has-text-weight-semibold mb-3">Multi-Concept Customization Result 3</h2>
+          <img 
+             src="static/videos/demo_gif/push_buttons_episode88.gif" 
+            alt="GIF 3"
+            style="max-width: 100%; border: 1px solid #ddd; border-radius: 6px;">
+        </div>
+      </div>
+
+      <div class="columns is-centered mb-6">
+        <!-- GIF 1 -->
+        <div class="column is-one-third has-text-centered">
+          <h2 class="subtitle is-4 has-text-weight-semibold mb-3">Multi-Concept Customization Result 1</h2>
+          <img 
+            src="static/videos/demo_gif/turn_tap_episode6.gif" 
+            alt="GIF 1"
+            style="max-width: 100%; border: 1px solid #ddd; border-radius: 6px;">
+        </div>
+      
+        <!-- GIF 2 -->
+        <div class="column is-one-third has-text-centered">
+          <h2 class="subtitle is-4 has-text-weight-semibold mb-3">Multi-Concept Customization Result 2</h2>
+          <img 
+            src="static/videos/demo_gif/turn_tap_episode66.gif" 
+            alt="GIF 2"
+            style="max-width: 100%; border: 1px solid #ddd; border-radius: 6px;">
+        </div>
+      
+        <!-- GIF 3 -->
+        <div class="column is-one-third has-text-centered">
+          <h2 class="subtitle is-4 has-text-weight-semibold mb-3">Multi-Concept Customization Result 3</h2>
+          <img 
+             src="static/videos/demo_gif/turn_tap_episode88.gif" 
+            alt="GIF 3"
+            style="max-width: 100%; border: 1px solid #ddd; border-radius: 6px;">
+        </div>
+      </div>
+
+      <div class="columns is-centered mb-6">
+        <!-- GIF 1 -->
+        <div class="column is-one-third has-text-centered">
+          <h2 class="subtitle is-4 has-text-weight-semibold mb-3">Multi-Concept Customization Result 1</h2>
+          <img 
+            src="static/videos/demo_gif/reach_and_drag_episode6.gif" 
+            alt="GIF 1"
+            style="max-width: 100%; border: 1px solid #ddd; border-radius: 6px;">
+        </div>
+      
+        <!-- GIF 2 -->
+        <div class="column is-one-third has-text-centered">
+          <h2 class="subtitle is-4 has-text-weight-semibold mb-3">Multi-Concept Customization Result 2</h2>
+          <img 
+            src="static/videos/demo_gif/reach_and_drag_episode66.gif" 
+            alt="GIF 2"
+            style="max-width: 100%; border: 1px solid #ddd; border-radius: 6px;">
+        </div>
+      
+        <!-- GIF 3 -->
+        <div class="column is-one-third has-text-centered">
+          <h2 class="subtitle is-4 has-text-weight-semibold mb-3">Multi-Concept Customization Result 3</h2>
+          <img 
+             src="static/videos/demo_gif/reach_and_drag_episode88.gif" 
+            alt="GIF 3"
+            style="max-width: 100%; border: 1px solid #ddd; border-radius: 6px;">
+        </div>
+      </div>
+
+      <div class="columns is-centered mb-6">
+        <!-- GIF 1 -->
+        <div class="column is-one-third has-text-centered">
+          <h2 class="subtitle is-4 has-text-weight-semibold mb-3">Multi-Concept Customization Result 1</h2>
+          <img 
+            src="static/videos/demo_gif/light_bulb_in_episode6.gif" 
+            alt="GIF 1"
+            style="max-width: 100%; border: 1px solid #ddd; border-radius: 6px;">
+        </div>
+      
+        <!-- GIF 2 -->
+        <div class="column is-one-third has-text-centered">
+          <h2 class="subtitle is-4 has-text-weight-semibold mb-3">Multi-Concept Customization Result 2</h2>
+          <img 
+            src="static/videos/demo_gif/light_bulb_in_episode66.gif" 
+            alt="GIF 2"
+            style="max-width: 100%; border: 1px solid #ddd; border-radius: 6px;">
+        </div>
+      
+        <!-- GIF 3 -->
+        <div class="column is-one-third has-text-centered">
+          <h2 class="subtitle is-4 has-text-weight-semibold mb-3">Multi-Concept Customization Result 3</h2>
+          <img 
+             src="static/videos/demo_gif/light_bulb_in_episode88.gif" 
+            alt="GIF 3"
+            style="max-width: 100%; border: 1px solid #ddd; border-radius: 6px;">
+        </div>
+      </div>
+
+      <div class="columns is-centered mb-6">
+        <!-- GIF 1 -->
+        <div class="column is-one-third has-text-centered">
+          <h2 class="subtitle is-4 has-text-weight-semibold mb-3">Multi-Concept Customization Result 1</h2>
+          <img 
+            src="static/videos/demo_gif/close_jar_episode6.gif" 
+            alt="GIF 1"
+            style="max-width: 100%; border: 1px solid #ddd; border-radius: 6px;">
+        </div>
+      
+        <!-- GIF 2 -->
+        <div class="column is-one-third has-text-centered">
+          <h2 class="subtitle is-4 has-text-weight-semibold mb-3">Multi-Concept Customization Result 2</h2>
+          <img 
+            src="static/videos/demo_gif/close_jar_episode66.gif" 
+            alt="GIF 2"
+            style="max-width: 100%; border: 1px solid #ddd; border-radius: 6px;">
+        </div>
+      
+        <!-- GIF 3 -->
+        <div class="column is-one-third has-text-centered">
+          <h2 class="subtitle is-4 has-text-weight-semibold mb-3">Multi-Concept Customization Result 3</h2>
+          <img 
+             src="static/videos/demo_gif/close_jar_episode88.gif" 
+            alt="GIF 3"
+            style="max-width: 100%; border: 1px solid #ddd; border-radius: 6px;">
+        </div>
+      </div>
+
+      <div class="columns is-centered mb-6">
+        <!-- GIF 1 -->
+        <div class="column is-one-third has-text-centered">
+          <h2 class="subtitle is-4 has-text-weight-semibold mb-3">Multi-Concept Customization Result 1</h2>
+          <img 
+            src="static/videos/demo_gif/place_wine_at_rack_location_episode6.gif" 
+            alt="GIF 1"
+            style="max-width: 100%; border: 1px solid #ddd; border-radius: 6px;">
+        </div>
+      
+        <!-- GIF 2 -->
+        <div class="column is-one-third has-text-centered">
+          <h2 class="subtitle is-4 has-text-weight-semibold mb-3">Multi-Concept Customization Result 2</h2>
+          <img 
+            src="static/videos/demo_gif/place_wine_at_rack_location_episode66.gif" 
+            alt="GIF 2"
+            style="max-width: 100%; border: 1px solid #ddd; border-radius: 6px;">
+        </div>
+      
+        <!-- GIF 3 -->
+        <div class="column is-one-third has-text-centered">
+          <h2 class="subtitle is-4 has-text-weight-semibold mb-3">Multi-Concept Customization Result 3</h2>
+          <img 
+             src="static/videos/demo_gif/place_wine_at_rack_location_episode88.gif" 
+            alt="GIF 3"
+            style="max-width: 100%; border: 1px solid #ddd; border-radius: 6px;">
+        </div>
+      </div>
+
+      <div class="columns is-centered mb-6">
+        <!-- GIF 1 -->
+        <div class="column is-one-third has-text-centered">
+          <h2 class="subtitle is-4 has-text-weight-semibold mb-3">Multi-Concept Customization Result 1</h2>
+          <img 
+            src="static/videos/demo_gif/stack_blocks_episode6.gif" 
+            alt="GIF 1"
+            style="max-width: 100%; border: 1px solid #ddd; border-radius: 6px;">
+        </div>
+      
+        <!-- GIF 2 -->
+        <div class="column is-one-third has-text-centered">
+          <h2 class="subtitle is-4 has-text-weight-semibold mb-3">Multi-Concept Customization Result 2</h2>
+          <img 
+            src="static/videos/demo_gif/stack_blocks_episode66.gif" 
+            alt="GIF 2"
+            style="max-width: 100%; border: 1px solid #ddd; border-radius: 6px;">
+        </div>
+      
+        <!-- GIF 3 -->
+        <div class="column is-one-third has-text-centered">
+          <h2 class="subtitle is-4 has-text-weight-semibold mb-3">Multi-Concept Customization Result 3</h2>
+          <img 
+             src="static/videos/demo_gif/stack_blocks_episode88.gif" 
+            alt="GIF 3"
+            style="max-width: 100%; border: 1px solid #ddd; border-radius: 6px;">
+        </div>
+      </div>
+
+      <div class="columns is-centered mb-6">
+        <!-- GIF 1 -->
+        <div class="column is-one-third has-text-centered">
+          <h2 class="subtitle is-4 has-text-weight-semibold mb-3">Multi-Concept Customization Result 1</h2>
+          <img 
+            src="static/videos/demo_gif/meat_off_grill_episode42.gif" 
+            alt="GIF 1"
+            style="max-width: 100%; border: 1px solid #ddd; border-radius: 6px;">
+        </div>
+      
+        <!-- GIF 2 -->
+        <div class="column is-one-third has-text-centered">
+          <h2 class="subtitle is-4 has-text-weight-semibold mb-3">Multi-Concept Customization Result 2</h2>
+          <img 
+            src="static/videos/demo_gif/meat_off_grill_episode66.gif" 
+            alt="GIF 2"
+            style="max-width: 100%; border: 1px solid #ddd; border-radius: 6px;">
+        </div>
+      
+        <!-- GIF 3 -->
+        <div class="column is-one-third has-text-centered">
+          <h2 class="subtitle is-4 has-text-weight-semibold mb-3">Multi-Concept Customization Result 3</h2>
+          <img 
+             src="static/videos/demo_gif/meat_off_grill_episode88.gif" 
+            alt="GIF 3"
+            style="max-width: 100%; border: 1px solid #ddd; border-radius: 6px;">
+        </div>
+      </div>
+
+    </div>
+
   </div>
 </section>
 
@@ -402,7 +783,7 @@
   }
 </style>
 
-  <footer class="footer">
+<!-- <footer class="footer">
   <div class="container">
     <div class="columns is-centered">
       <div class="column is-8">
@@ -418,7 +799,7 @@
       </div>
     </div>
   </div>
-</footer>
+</footer> -->
 
 <!-- Statcounter tracking code -->
   
